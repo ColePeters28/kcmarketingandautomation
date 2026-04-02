@@ -32,7 +32,7 @@
     overflow-x: hidden;
   }
 
-  /* ── NAV ── */
+  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -45,7 +45,6 @@
     background: rgba(8,10,15,0.92);
     backdrop-filter: blur(16px);
   }
-
   .nav-logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
@@ -54,7 +53,6 @@
     text-decoration: none;
   }
   .nav-logo span { color: var(--orange); }
-
   .nav-cta {
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
@@ -68,7 +66,7 @@
   }
   .nav-cta:hover { background: var(--orange-dim); }
 
-  /* ── HERO ── */
+  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -78,10 +76,8 @@
     position: relative;
     overflow: hidden;
   }
-
   .hero-grid {
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background-image:
       linear-gradient(var(--border) 1px, transparent 1px),
       linear-gradient(90deg, var(--border) 1px, transparent 1px);
@@ -89,15 +85,12 @@
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
     pointer-events: none;
   }
-
   .hero-glow {
-    position: absolute;
-    top: -20%; right: -10%;
+    position: absolute; top: -20%; right: -10%;
     width: 700px; height: 700px;
     background: radial-gradient(circle, rgba(255,92,26,0.12) 0%, transparent 65%);
     pointer-events: none;
   }
-
   .hero-tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
@@ -107,7 +100,6 @@
     margin-bottom: 1.5rem;
     position: relative;
   }
-
   .hero h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(4rem, 10vw, 9rem);
@@ -116,14 +108,11 @@
     max-width: 900px;
     position: relative;
   }
-
   .hero h1 em { font-style: normal; color: var(--orange); }
-
   .hero h1 .outline {
     -webkit-text-stroke: 1px rgba(240,242,248,0.25);
     color: transparent;
   }
-
   .hero-sub {
     margin-top: 2rem;
     font-size: 1.1rem;
@@ -132,7 +121,6 @@
     line-height: 1.7;
     position: relative;
   }
-
   .hero-actions {
     margin-top: 2.5rem;
     display: flex;
@@ -141,7 +129,6 @@
     position: relative;
     flex-wrap: wrap;
   }
-
   .btn-primary {
     font-family: 'DM Mono', monospace;
     font-size: 0.78rem;
@@ -155,7 +142,6 @@
     transition: background 0.2s, transform 0.2s;
   }
   .btn-primary:hover { background: var(--orange-dim); transform: translateY(-2px); }
-
   .btn-ghost {
     font-family: 'DM Mono', monospace;
     font-size: 0.78rem;
@@ -168,7 +154,6 @@
     transition: border-color 0.2s, color 0.2s;
   }
   .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
-
   .hero-stats {
     margin-top: 5rem;
     display: flex;
@@ -176,7 +161,6 @@
     position: relative;
     flex-wrap: wrap;
   }
-
   .stat-num {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.8rem;
@@ -184,7 +168,6 @@
     letter-spacing: 0.05em;
     display: block;
   }
-
   .stat-label {
     font-size: 0.78rem;
     color: var(--grey);
@@ -193,9 +176,8 @@
     margin-top: 0.2rem;
   }
 
-  /* ── SECTIONS ── */
+  /* SECTIONS */
   section { padding: 7rem 4rem; }
-
   .section-tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
@@ -204,7 +186,6 @@
     color: var(--orange);
     margin-bottom: 0.75rem;
   }
-
   .section-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -212,15 +193,13 @@
     line-height: 1;
   }
 
-  /* ── HOW IT WORKS ── */
+  /* HOW IT WORKS */
   .how {
     background: var(--navy);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-
   .how-inner { max-width: 1100px; margin: 0 auto; }
-
   .how-header {
     display: flex;
     justify-content: space-between;
@@ -228,20 +207,17 @@
     margin-bottom: 5rem;
     gap: 2rem;
   }
-
   .how-header p {
     max-width: 380px;
     color: var(--grey-light);
     line-height: 1.7;
     font-size: 1rem;
   }
-
   .steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
   }
-
   .step {
     background: var(--navy-mid);
     padding: 3rem 2.5rem;
@@ -249,7 +225,6 @@
     transition: background 0.3s;
   }
   .step:hover { background: var(--navy-light); }
-
   .step-num {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
@@ -257,31 +232,24 @@
     line-height: 1;
     margin-bottom: 1.5rem;
   }
-
   .step h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.05em;
     margin-bottom: 0.75rem;
   }
-
   .step p { color: var(--grey-light); font-size: 0.92rem; line-height: 1.7; }
-
   .step-icon {
-    position: absolute;
-    top: 2.5rem; right: 2.5rem;
+    position: absolute; top: 2.5rem; right: 2.5rem;
     width: 40px; height: 40px;
     border: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     font-size: 1.1rem;
   }
 
-  /* ── PRICING ── */
+  /* PRICING */
   .pricing { background: var(--black); }
   .pricing-inner { max-width: 1100px; margin: 0 auto; }
-
   .pricing-header {
     display: flex;
     justify-content: space-between;
@@ -289,19 +257,16 @@
     margin-bottom: 4rem;
     gap: 2rem;
   }
-
   .pricing-header p {
     max-width: 400px;
     color: var(--grey-light);
     line-height: 1.7;
   }
-
   .plans {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
   }
-
   .plan {
     background: var(--navy-mid);
     padding: 2.5rem;
@@ -314,7 +279,6 @@
     background: var(--navy-light);
     outline: 1px solid var(--orange);
   }
-
   .popular-badge {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -327,7 +291,6 @@
     margin-bottom: 1rem;
     align-self: flex-start;
   }
-
   .savings-row {
     display: flex;
     align-items: center;
@@ -335,7 +298,6 @@
     margin-bottom: 1.25rem;
     flex-wrap: wrap;
   }
-
   .savings-row .old-fee {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
@@ -343,7 +305,6 @@
     text-decoration: line-through;
     letter-spacing: 0.04em;
   }
-
   .savings-row .saved-tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -354,14 +315,12 @@
     border: 1px solid rgba(46,204,113,0.3);
     padding: 0.2rem 0.55rem;
   }
-
   .plan-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.9rem;
     letter-spacing: 0.05em;
     margin-bottom: 0.3rem;
   }
-
   .plan-price {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.5rem;
@@ -370,7 +329,6 @@
     letter-spacing: 0.02em;
   }
   .plan-price sup { font-size: 1.4rem; vertical-align: super; }
-
   .plan-period {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
@@ -379,19 +337,16 @@
     margin-bottom: 1.75rem;
     margin-top: 0.25rem;
   }
-
   .plan-divider {
     height: 1px;
     background: var(--border);
     margin-bottom: 1.75rem;
   }
-
   .plan-features {
     list-style: none;
     flex: 1;
     margin-bottom: 2rem;
   }
-
   .plan-features li {
     font-size: 0.85rem;
     color: var(--grey-light);
@@ -402,7 +357,6 @@
     gap: 0.7rem;
     line-height: 1.5;
   }
-
   .plan-features li::before {
     content: '→';
     color: var(--orange);
@@ -410,7 +364,6 @@
     font-size: 0.8rem;
     margin-top: 0.1rem;
   }
-
   .plan-features li.guarantee {
     color: var(--green);
     border-bottom: none;
@@ -418,7 +371,6 @@
     font-weight: 500;
   }
   .plan-features li.guarantee::before { content: '✓'; color: var(--green); }
-
   .plan-btn {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
@@ -430,29 +382,25 @@
     display: block;
     transition: all 0.2s;
   }
-
   .plan-btn-outline {
     color: var(--grey-light);
     border: 1px solid var(--border);
   }
   .plan-btn-outline:hover { border-color: var(--orange); color: var(--orange); }
-
   .plan-btn-solid {
     color: var(--black);
     background: var(--orange);
   }
   .plan-btn-solid:hover { background: var(--orange-dim); }
 
-  /* ── BOOK A CALL ── */
+  /* BOOK A CALL */
   .book {
     background: var(--navy);
     border-top: 1px solid var(--border);
     text-align: center;
     padding: 8rem 4rem;
   }
-
   .book-inner { max-width: 680px; margin: 0 auto; }
-
   .book h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(3rem, 7vw, 6rem);
@@ -461,7 +409,6 @@
     margin-bottom: 1.5rem;
   }
   .book h2 em { font-style: normal; color: var(--orange); }
-
   .book p {
     color: var(--grey-light);
     font-size: 1rem;
@@ -471,7 +418,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   .book-btn {
     font-family: 'DM Mono', monospace;
     font-size: 0.85rem;
@@ -485,7 +431,6 @@
     transition: background 0.2s, transform 0.2s;
   }
   .book-btn:hover { background: var(--orange-dim); transform: translateY(-3px); }
-
   .book-note {
     margin-top: 1.5rem;
     font-family: 'DM Mono', monospace;
@@ -494,7 +439,7 @@
     letter-spacing: 0.05em;
   }
 
-  /* ── FOOTER ── */
+  /* FOOTER */
   footer {
     background: var(--black);
     border-top: 1px solid var(--border);
@@ -505,16 +450,13 @@
     gap: 2rem;
     flex-wrap: wrap;
   }
-
   .footer-logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.12em;
   }
   .footer-logo span { color: var(--orange); }
-
   .footer-links { display: flex; gap: 2.5rem; flex-wrap: wrap; }
-
   .footer-links a {
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
@@ -525,7 +467,6 @@
     transition: color 0.2s;
   }
   .footer-links a:hover { color: var(--orange); }
-
   .footer-copy {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -534,10 +475,11 @@
     text-transform: uppercase;
   }
 
-  /* ── MOBILE ── */
+  /* MOBILE */
   @media (max-width: 900px) {
     nav { padding: 1.25rem 1.5rem; }
-    .hero, section { padding: 7rem 1.5rem 4rem; }
+    .hero { padding: 7rem 1.5rem 4rem; }
+    section { padding: 5rem 1.5rem; }
     .steps, .plans { grid-template-columns: 1fr; }
     .how-header, .pricing-header { flex-direction: column; align-items: flex-start; }
     .hero-stats { gap: 2rem; }
@@ -595,26 +537,26 @@
         <p class="section-tag">The Process</p>
         <h2 class="section-title">HOW IT<br>WORKS</h2>
       </div>
-      <p>Three steps. Fully automated. You don't touch anything after setup — we handle it all.</p>
+      <p>Three steps. Fully automated. You don't touch anything after setup — we handle it all and have you live within 7 days.</p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-icon">⚙️</div>
         <h3>We Build Your System</h3>
-        <p>We set up your automated email and SMS sequences, connect to your existing customer list, and configure everything. White-glove onboarding — live within 7 days.</p>
+        <p>We set up your automated email and SMS sequences, connect to your existing customer list, and configure everything. White-glove onboarding — live within 7 days, no tech skills needed.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-icon">📧</div>
         <h3>System Runs On Autopilot</h3>
-        <p>Seasonal tune-up reminders fire automatically. Post-service follow-ups go out after every job. Review requests hit customers at exactly the right moment.</p>
+        <p>Seasonal tune-up reminders fire automatically. Post-service follow-ups go out after every job. Review requests hit customers at exactly the right moment — all without you lifting a finger.</p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-icon">📞</div>
         <h3>You Just Answer The Phone</h3>
-        <p>Lapsed customers call back to book. New 5-star reviews roll in on Google. Your calendar fills up — without you lifting a finger on marketing.</p>
+        <p>Lapsed customers call back to book. New 5-star reviews roll in on Google. Your calendar fills up — without you spending a dollar on ads or a minute on marketing.</p>
       </div>
     </div>
   </div>
@@ -628,7 +570,7 @@
         <p class="section-tag">Simple Pricing</p>
         <h2 class="section-title">PICK YOUR<br>PLAN</h2>
       </div>
-      <p>No setup fees. No long-term contracts. Cancel anytime. Most clients see positive ROI within the first two weeks. 30-day money-back guarantee on every plan.</p>
+      <p>No setup fees. No long-term contracts. Cancel anytime. Most clients see positive ROI within the first two weeks. Every plan backed by a 30-day money-back guarantee.</p>
     </div>
     <div class="plans">
 
@@ -650,7 +592,7 @@
           <li>Up to 500 contacts managed</li>
           <li class="guarantee">30-day money-back guarantee</li>
         </ul>
-        <a href="https://calendly.com/colepetersbot/30min" target="_blank" class="plan-btn plan-btn-outline">Get Started</a>
+        <a href="https://buy.stripe.com/4gMdRb1OnaqYcLb0974F200" target="_blank" class="plan-btn plan-btn-outline">Get Started</a>
       </div>
 
       <!-- GROWTH -->
@@ -669,13 +611,13 @@
           <li>Automated seasonal tune-up reminders (spring AC + fall heating)</li>
           <li>Post-service follow-up emails</li>
           <li>Automated Google review requests after every job</li>
-          <li>Smart review routing (happy → Google, unhappy → private feedback)</li>
+          <li>Smart review routing (happy &rarr; Google, unhappy &rarr; private feedback)</li>
           <li>SMS follow-up reminders</li>
           <li>Monthly performance + Google review report</li>
           <li>Up to 1,000 contacts managed</li>
           <li class="guarantee">30-day money-back guarantee</li>
         </ul>
-        <a href="https://calendly.com/colepetersbot/30min" target="_blank" class="plan-btn plan-btn-solid">Get Started</a>
+        <a href="https://buy.stripe.com/6oU28t64D9mUbH74pn4F201" target="_blank" class="plan-btn plan-btn-solid">Get Started</a>
       </div>
 
       <!-- DFY -->
@@ -694,13 +636,13 @@
           <li>Post-service follow-up emails</li>
           <li>Automated Google review requests + smart routing</li>
           <li>SMS follow-up reminders</li>
-          <li>AI receptionist — answers after-hours calls & books appointments</li>
+          <li>AI receptionist &mdash; answers after-hours calls &amp; books appointments</li>
           <li>Custom seasonal campaigns (summer AC push, winter heating push)</li>
           <li>Monthly 30-min strategy call with Cole</li>
           <li>Unlimited contacts managed</li>
           <li class="guarantee">30-day money-back guarantee</li>
         </ul>
-        <a href="https://calendly.com/colepetersbot/30min" target="_blank" class="plan-btn plan-btn-outline">Get Started</a>
+        <a href="https://buy.stripe.com/bJe14peB9dDa4eF6xv4F202" target="_blank" class="plan-btn plan-btn-outline">Get Started</a>
       </div>
 
     </div>
@@ -726,7 +668,7 @@
     <a href="#pricing">Pricing</a>
     <a href="https://calendly.com/colepetersbot/30min" target="_blank">Book a Call</a>
   </div>
-  <div class="footer-copy">© 2026 KC Marketing & Automation</div>
+  <div class="footer-copy">&copy; 2026 KC Marketing &amp; Automation</div>
 </footer>
 
 </body>
